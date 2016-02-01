@@ -21,7 +21,8 @@ namespace broadcursor
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            BroadCursor bc = new BroadCursor(this);
+            // フォームと表示させたいテキストと
+            BroadCursor bc = new BroadCursor(this, "active");
             // カーソルで動かしたいコントロールを渡すだけ
             bc.addControl(monthCalendar1);
             bc.addControl(listBox1);
